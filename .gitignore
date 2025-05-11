@@ -1,20 +1,76 @@
 # Archivos de Docker
 .docker/
 docker-compose.override.yml
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.rar
+*.7z
+
+# Archivos de datos y caché
+data/
+cache/
+tmp/
+temp/
+*.db
+*.sqlite
+*.sqlite3
+
+# Archivos de logs
+logs/
+*.log
+
+# Archivos de entorno
+.env
+.env.*
+*.env
 
 # Archivos del sistema
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Archivos de IDE
 .idea/
 .vscode/
 *.swp
 *.swo
+*.sublime-*
 
-# Archivos de logs
-*.log
+# Archivos de dependencias
+node_modules/
+vendor/
+bower_components/
+jspm_packages/
 
-# Archivos de entorno
-.env
-.env.* 
+# Archivos de compilación
+dist/
+build/
+out/
+target/
+*.class
+*.jar
+*.war
+
+# Archivos multimedia
+*.mp3
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.mkv
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.ico
+
+# Archivos de respaldo
+*.bak
+*.backup
+*~
+*.old 
