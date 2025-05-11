@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<movie>
+  <title>Cincuenta Sombras de Grey</title>
+  <originaltitle>Fifty Shades of Grey</originaltitle>
+  <sorttitle>cincuenta sombras de grey</sorttitle>
+  <ratings>
+    <rating name="imdb" max="10" default="true">
+      <value>4.2</value>
+      <votes>344833</votes>
+    </rating>
+    <rating name="themoviedb" max="10">
+      <value>5.9</value>
+      <votes>11907</votes>
+    </rating>
+    <rating name="tomatometerallcritics" max="100">
+      <value>25</value>
+    </rating>
+  </ratings>
+  <rating>5.9</rating>
+  <criticrating>25</criticrating>
+  <userrating />
+  <top250 />
+  <outline />
+  <plot>Anastasia Steele, una joven estudiante de literatura, conoce al carismático y misterioso empresario Christian Grey durante una entrevista. A pesar de sus diferencias, la atracción entre ellos es innegable, llevándolos a una relación intensa donde Ana descubrirá facetas inesperadas de Grey y de sí misma.</plot>
+  <tagline />
+  <runtime>125</runtime>
+  <thumb aspect="poster" preview="https://image.tmdb.org/t/p/original/63kGofUkt1Mx0SIL4XI4Z5AoSgt.jpg">https://image.tmdb.org/t/p/original/63kGofUkt1Mx0SIL4XI4Z5AoSgt.jpg</thumb>
+  <fanart>
+    <thumb preview="https://image.tmdb.org/t/p/original/7Iz55ystlGDNlavsKnP7iaJeLma.jpg">https://image.tmdb.org/t/p/original/7Iz55ystlGDNlavsKnP7iaJeLma.jpg</thumb>
+  </fanart>
+  <mpaa>R</mpaa>
+  <playcount />
+  <lastplayed />
+  <id>216015</id>
+  <uniqueid type="tmdb" default="true">216015</uniqueid>
+  <uniqueid type="imdb">tt2322441</uniqueid>
+  <genre>Drama</genre>
+  <genre>Romance</genre>
+  <genre>Thriller</genre>
+  <country />
+  <set>
+    <name>Fifty Shades Collection</name>
+    <overview />
+  </set>
+  <status>Released</status>
+  <credits>Kelly Marcel</credits>
+  <director>Sam Taylor-Johnson</director>
+  <premiered>2015-02-11</premiered>
+  <year>2015</year>
+  <studio>Universal Pictures</studio>
+  <trailer>plugin://plugin.video.youtube/play/?video_id=6FDTMRK7-24</trailer>
+  <watched>false</watched>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <aspect>2.4</aspect>
+        <bitrate>2075085</bitrate>
+        <codec>x264</codec>
+        <framerate>23.976023976023976023976023976</framerate>
+        <height>800</height>
+        <scantype>Progressive</scantype>
+        <width>1920</width>
+        <duration>128.49503333333334</duration>
+        <durationinseconds>7710</durationinseconds>
+        <hdrtype></hdrtype>
+      </video>
+      <audio>
+        <bitrate>93816</bitrate>
+        <channels>2</channels>
+        <codec>AAC</codec>
+        <language>eng</language>
+      </audio>
+    </streamdetails>
+  </fileinfo>
+  <actor>
+    <name>Dakota Johnson</name>
+    <role>Anastasia Steele</role>
+    <order>0</order>
+    <thumb>https://image.tmdb.org/t/p/original/bSfVBJ8S3F1MPpCmIWb8UJcUZGP.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Jamie Dornan</name>
+    <role>Christian Grey</role>
+    <order>1</order>
+    <thumb>https://image.tmdb.org/t/p/original/dPCjxgq4YsqkcZ3fsE84Ifq0Wxv.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Jennifer Ehle</name>
+    <role>Carla</role>
+    <order>2</order>
+    <thumb>https://image.tmdb.org/t/p/original/kMddVKineLFpxsUoGrb3E6edkOv.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Eloise Mumford</name>
+    <role>Kate</role>
+    <order>3</order>
+    <thumb>https://image.tmdb.org/t/p/original/qSZvYfSDO6hyecInknWpcyrQ7Hz.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Victor Rasuk</name>
+    <role>José</role>
+    <order>4</order>
+    <thumb>https://image.tmdb.org/t/p/original/1vh2Yzp9bhmaxLfpNCrO7DVoURd.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Luke Grimes</name>
+    <role>Elliot Grey</role>
+    <order>5</order>
+    <thumb>https://image.tmdb.org/t/p/original/52KsHFCu0LToakebnxqC4VeRixl.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Marcia Gay Harden</name>
+    <role>Dr. Grey</role>
+    <order>6</order>
+    <thumb>https://image.tmdb.org/t/p/original/cBAFNVmGdVwMJqSGPjBHeYVaTdH.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Rita Ora</name>
+    <role>Mia Grey</role>
+    <order>7</order>
+    <thumb>https://image.tmdb.org/t/p/original/o1DMrW8vsTYnCcvVTZy6hEvlk4f.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Max Martini</name>
+    <role>Taylor</role>
+    <order>8</order>
+    <thumb>https://image.tmdb.org/t/p/original/gehOxb2cgNjcRnbAxaCUnFFJvAY.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Callum Keith Rennie</name>
+    <role>Ray</role>
+    <order>9</order>
+    <thumb>https://image.tmdb.org/t/p/original/zOeA4IR4xYde2VlDsHZy2SoPZkc.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Andrew Airlie</name>
+    <role>Mr. Grey</role>
+    <order>10</order>
+    <thumb>https://image.tmdb.org/t/p/original/ksxnvf68ohto7VWO4eE3VgTQAuc.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Dylan Neal</name>
+    <role>Bob</role>
+    <order>11</order>
+    <thumb>https://image.tmdb.org/t/p/original/6SCHcpOYL3yhV823QSn1RuYbtLk.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Elliat Albrecht</name>
+    <role>Olivia</role>
+    <order>12</order>
+  </actor>
+  <actor>
+    <name>Rachel Skarsten</name>
+    <role>Andrea</role>
+    <order>13</order>
+    <thumb>https://image.tmdb.org/t/p/original/kamw9EzukwFD3xfsQx16BapCBZ8.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Emily Fonda</name>
+    <role>Martina</role>
+    <order>14</order>
+  </actor>
+  <actor>
+    <name>Anthony Konechny</name>
+    <role>Paul Clayton</role>
+    <order>15</order>
+    <thumb>https://image.tmdb.org/t/p/original/3VXJssdk9Vt0ee0XlKahbYlRgsf.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Bruce Dawson</name>
+    <role>Mr. Clayton</role>
+    <order>16</order>
+    <thumb>https://image.tmdb.org/t/p/original/ivdTRe6KjWZX7gN35EUk4RvvfIR.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Tom Butler</name>
+    <role>WSU University President</role>
+    <order>17</order>
+    <thumb>https://image.tmdb.org/t/p/original/sMDuFSvna90gGV0jkOK7PDzQC8g.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Christine Willes</name>
+    <role>WSU Grad Speaker / Reader</role>
+    <order>18</order>
+    <thumb>https://image.tmdb.org/t/p/original/bOSrIT6eir8mzwO7KfA6NaFbKMh.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Chris Shields</name>
+    <role>WSU Professor</role>
+    <order>19</order>
+    <thumb>https://image.tmdb.org/t/p/original/wMi2k3l9lyuJJchQLh87RAUiVWl.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Anna Louise Sargeant</name>
+    <role>Female Grad</role>
+    <order>20</order>
+    <thumb>https://image.tmdb.org/t/p/original/acR4ZxvuquiMn2DdhtUyHW5TSyS.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Megan Danso</name>
+    <role>Female Grad</role>
+    <order>21</order>
+    <thumb>https://image.tmdb.org/t/p/original/9LbrrngK3QX6YeWt3uDZVNgpukT.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Jason Cermak</name>
+    <role>Graduation Photographer</role>
+    <order>22</order>
+    <thumb>https://image.tmdb.org/t/p/original/Am3whjOE2lmqK1cNT8uY3slgIG2.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Brent McLaren</name>
+    <role>Computer Technician</role>
+    <order>23</order>
+  </actor>
+  <actor>
+    <name>Steven Cree Molison</name>
+    <role>Glider Tow Pilot</role>
+    <order>24</order>
+    <thumb>https://image.tmdb.org/t/p/original/s1R9D7y646u38oi2POjHQ0RUHSO.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Elise Gatien</name>
+    <role>Young Woman at Bar</role>
+    <order>25</order>
+    <thumb>https://image.tmdb.org/t/p/original/ydRu6H9pbd3pkRfBwEzhfBCIJpQ.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Reese Alexander</name>
+    <role>Elevator Business Man</role>
+    <order>26</order>
+    <thumb>https://image.tmdb.org/t/p/original/eul6KZFsSV3F2SbCXOKMINg0kfR.jpg</thumb>
+  </actor>
+  <actor>
+    <name>David Orth</name>
+    <role>Savannah Hotel Waiter</role>
+    <order>27</order>
+    <thumb>https://image.tmdb.org/t/p/original/7jblOrBIxFu5u4qyzn0jAQkT2yS.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Julia Dominczak</name>
+    <role>Pig-Tailed Blonde Server</role>
+    <order>28</order>
+    <thumb>https://image.tmdb.org/t/p/original/mTvhqmMOJxeiZB9Eqh0wwgbb3N1.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Brandi Alexander</name>
+    <role>Flight Attendant</role>
+    <order>29</order>
+    <thumb>https://image.tmdb.org/t/p/original/qyU3MZl0YpcUUEklXUI1PQ28cT5.jpg</thumb>
+  </actor>
+</movie>

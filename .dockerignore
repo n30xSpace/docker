@@ -1,0 +1,60 @@
+# Archivos de configuración local
+.env
+*.env
+.env.*
+
+# Directorios de datos y medios
+medias/
+downloads/
+media/
+
+# Directorios de configuración de servicios
+*/config/
+*/data/
+*/downloads/
+*/temp/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de logs
+*.log
+logs/
+
+# Archivos temporales
+*.tmp
+*.temp
+*.swp
+*~
+
+# Archivos de caché
+.cache/
+__pycache__/
+*.pyc
+
+# Archivos de IDE y editores
+.idea/
+.vscode/
+*.sublime-*
+*.code-workspace
+
+# Archivos de respaldo
+*.bak
+*.backup
+*_backup
+
+# Archivos de Docker
+.docker/
+docker-compose.override.yml
+
+# Archivos de desarrollo
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de documentación temporal
+*.md~
+*.txt~ 

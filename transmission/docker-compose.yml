@@ -1,0 +1,83 @@
+services:
+  transmission:
+    image: linuxserver/transmission:latest
+    container_name: transmission
+    restart: unless-stopped
+    volumes:
+      - ./config:/config
+      # Carpetas de medios
+      - ../media/movies:/downloads/radarr
+      - ../media/tv:/downloads/sonarr
+      - ../media/music:/downloads/lidarr
+      - ../media/books:/downloads/readarr
+      # Carpetas de descargas completadas
+      - ../media/movies/complete:/downloads/complete/radarr
+      - ../media/tv/complete:/downloads/complete/tv-sonarr
+      - ../media/music/complete:/downloads/complete/lidarr
+      - ../media/books/complete:/downloads/complete/readarr
+      # Carpetas de descargas en progreso
+      - ../media/movies/incomplete:/downloads/incomplete/radarr
+      - ../media/tv/incomplete:/downloads/incomplete/tv-sonarr
+      - ../media/music/incomplete:/downloads/incomplete/lidarr
+      - ../media/books/incomplete:/downloads/incomplete/readarr
+      # Carpetas de watch
+      - ../media/movies/watch:/downloads/watch/radarr
+      - ../media/tv/watch:/downloads/watch/tv-sonarr
+      - ../media/music/watch:/downloads/watch/lidarr
+      - ../media/books/watch:/downloads/watch/readarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Santiago
+      # Configuración de rendimiento
+      - TRANSMISSION_DOWNLOAD_DIR=/downloads/complete/radarr
+      - TRANSMISSION_INCOMPLETE_DIR=/downloads/incomplete/radarr
+      - TRANSMISSION_WATCH_DIR=/downloads/watch/radarr
+      - TRANSMISSION_RPC_PORT=9091
+      - TRANSMISSION_RPC_AUTHENTICATION_REQUIRED=true
+      - TRANSMISSION_RPC_USERNAME=admin
+      - TRANSMISSION_RPC_PASSWORD=admin
+      # Configuración de red
+      - TRANSMISSION_PEER_PORT=51414
+      - TRANSMISSION_DHT_ENABLED=true
+      - TRANSMISSION_PEX_ENABLED=true
+      - TRANSMISSION_LPD_ENABLED=true
+      # Configuración de límites
+      - TRANSMISSION_SPEED_LIMIT_DOWN=0
+      - TRANSMISSION_SPEED_LIMIT_UP=0
+      - TRANSMISSION_RATIO_LIMIT=2.0
+      - TRANSMISSION_RATIO_LIMIT_ENABLED=true
+      - TRANSMISSION_IDLE_SEEDING_LIMIT=30
+      - TRANSMISSION_IDLE_SEEDING_LIMIT_ENABLED=true
+      # Configuración de caché
+      - TRANSMISSION_CACHE_SIZE_MB=512
+      - TRANSMISSION_PREALLOCATION=1
+      # Configuración de cola
+      - TRANSMISSION_QUEUE_STALLED_ENABLED=true
+      - TRANSMISSION_QUEUE_STALLED_MINUTES=30
+      - TRANSMISSION_DOWNLOAD_QUEUE_SIZE=5
+      - TRANSMISSION_SEED_QUEUE_SIZE=10
+    ports:
+      - 9091:9091
+    networks:
+      - default
+      - mediaservices
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "homarr:192.168.80.1"
+      - "radarr:192.168.80.5"
+      - "sonarr:192.168.80.3"
+      - "prowlarr:192.168.80.4"
+      - "lidarr:192.168.80.7"
+      - "readarr:192.168.80.8"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9091/transmission/rpc/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+networks:
+  default:
+  mediaservices:
+    external: true 

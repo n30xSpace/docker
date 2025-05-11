@@ -1,0 +1,33 @@
+services:
+  plex:
+    image: plexinc/pms-docker:latest
+    container_name: plex
+    restart: unless-stopped
+    environment:
+      - TZ=${TZ:-America/Santiago}
+      - PLEX_CLAIM=${PLEX_CLAIM:-}
+      - PLEX_UID=1000
+      - PLEX_GID=1000
+      - ADVERTISE_IP=http://localhost:32400/
+    volumes:
+      - ./config:/config
+      - ./transcode:/transcode
+      - ../medias/peliculas:/media/peliculas
+      - ../medias/series:/media/series
+      - ../medias/musica:/media/musica
+      - ../medias/descargas:/media/descargas
+      - ../medias/libros:/media/libros
+    ports:
+      - "${PLEX_PORT:-32400}:32400/tcp"
+      - "32400:32400/udp"
+      - "1900:1900/udp"
+      - "32469:32469/tcp"
+      - "32410-32414:32410-32414/udp"
+    networks:
+      - default
+      - npm_network
+
+networks:
+  default:
+  npm_network:
+    external: true 

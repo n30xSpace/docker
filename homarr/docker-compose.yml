@@ -1,0 +1,57 @@
+services:
+  homarr:
+    image: ghcr.io/ajnart/homarr:0.13.4
+    container_name: homarr
+    restart: unless-stopped
+    volumes:
+      - ./config:/app/data/configs
+      - ./icons:/app/public/icons
+      - ./data:/data
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      - TZ=America/Santiago
+      - PUID=1000
+      - PGID=1000
+      - DOCKER_HOST=unix:///var/run/docker.sock
+      - HOMARR_DEFAULT_PAGE_TITLE=Dashboard
+      - HOMARR_DEFAULT_PAGE_ICON=🏠
+      - HOMARR_DEFAULT_PAGE_LAYOUT=grid
+      - HOMARR_DEFAULT_PAGE_GRID_SIZE=4
+      - HOMARR_DEFAULT_PAGE_GRID_GAP=16
+      - HOMARR_DEFAULT_PAGE_GRID_PADDING=16
+      - HOMARR_DEFAULT_PAGE_GRID_ROUNDED=true
+      - HOMARR_DEFAULT_PAGE_GRID_SHADOW=true
+      - HOMARR_DEFAULT_PAGE_GRID_BACKGROUND=true
+      - HOMARR_DEFAULT_PAGE_GRID_BACKGROUND_COLOR=#1a1a1a
+      - HOMARR_DEFAULT_PAGE_GRID_BACKGROUND_OPACITY=0.8
+      - HOMARR_DEFAULT_PAGE_GRID_BACKGROUND_BLUR=10
+      - HOMARR_DEFAULT_PAGE_GRID_BACKGROUND_BLUR_OPACITY=0.5
+      - HOMARR_DEFAULT_PAGE_GRID_BACKGROUND_BLUR_COLOR=#000000
+      - HOMARR_DEFAULT_PAGE_GRID_BACKGROUND_BLUR_SIZE=10
+      - HOMARR_DEFAULT_PAGE_GRID_BACKGROUND_BLUR_SPREAD=0
+      - HOMARR_INTEGRATION_ENABLED=true
+      - HOMARR_INTEGRATION_AUTO_DISCOVER=true
+      - HOMARR_INTEGRATION_DOCKER_SOCKET=/var/run/docker.sock
+      - HOMARR_INTEGRATION_DOCKER_NETWORK=mediaservices
+    ports:
+      - 7575:7575
+    networks:
+      - default
+      - mediaservices
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "qbittorrent:192.168.80.2"
+      - "radarr:192.168.80.5"
+      - "sonarr:192.168.80.3"
+      - "prowlarr:192.168.80.4"
+      - "sabnzbd:192.168.80.6"
+      - "lidarr:192.168.80.7"
+      - "readarr:192.168.80.8"
+      - "calibre:192.168.80.9"
+      - "lazylibrarian:192.168.80.10"
+      - "vaultwarden:192.168.80.11"
+
+networks:
+  default:
+  mediaservices:
+    external: true 

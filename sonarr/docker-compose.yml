@@ -1,0 +1,31 @@
+services:
+  sonarr:
+    image: linuxserver/sonarr:latest
+    container_name: sonarr
+    restart: unless-stopped
+    volumes:
+      - ./config:/config
+      - ../media:/media
+      - ../media/tv:/tv
+      - ../media/descargas/sonarr:/downloads/sonarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Santiago
+      - SONARR_BRANCH=main
+      - SONARR_PORT=8989
+    ports:
+      - 8989:8989
+    networks:
+      - default
+      - mediaservices
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "qbittorrent:192.168.80.2"
+      - "prowlarr:192.168.80.4"
+      - "sabnzbd:192.168.80.6"
+
+networks:
+  default:
+  mediaservices:
+    external: true 

@@ -1,0 +1,31 @@
+services:
+  radarr:
+    image: linuxserver/radarr:latest
+    container_name: radarr
+    restart: unless-stopped
+    volumes:
+      - ./config:/config
+      - ../media:/media
+      - ../media/movies:/movies
+      - ../media/descargas/radarr:/downloads/radarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Santiago
+      - RADARR_BRANCH=master
+      - RADARR_PORT=7878
+    ports:
+      - 7878:7878
+    networks:
+      - default
+      - mediaservices
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "qbittorrent:192.168.80.2"
+      - "prowlarr:192.168.80.4"
+      - "sabnzbd:192.168.80.6"
+
+networks:
+  default:
+  mediaservices:
+    external: true 

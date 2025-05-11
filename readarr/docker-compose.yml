@@ -1,0 +1,53 @@
+services:
+  readarr:
+    image: hotio/readarr:latest
+    container_name: readarr
+    restart: unless-stopped
+    volumes:
+      - ./config:/config
+      - ../media:/media
+      - ../media/books:/books
+      - ../media/descargas/readarr:/downloads/readarr
+      - ../media/books/complete:/downloads/complete/readarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Santiago
+      - READARR_BRANCH=develop
+      - READARR_PORT=8787
+      # Configuración de caché
+      - READARR_CACHE_DIR=/config/cache
+      - READARR_BACKUP_DIR=/config/backups
+      # Configuración de logs
+      - READARR_LOG_LEVEL=info
+      # Configuración de actualizaciones
+      - READARR_UPDATE_AUTO=true
+      - READARR_UPDATE_MECHANISM=docker
+      # Configuración de rutas
+      - READARR_ROOT_FOLDER=/books
+      - READARR_DOWNLOAD_CLIENT_FOLDER=/downloads/readarr
+      - READARR_COMPLETED_DOWNLOAD_FOLDER=/downloads/complete/readarr
+    ports:
+      - 8787:8787
+    networks:
+      - default
+      - mediaservices
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "qbittorrent:192.168.80.2"
+      - "transmission:192.168.80.2"
+      - "prowlarr:192.168.80.4"
+      - "sabnzbd:192.168.80.6"
+      - "calibre:192.168.80.9"
+      - "lazylibrarian:192.168.80.10"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8787/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+networks:
+  default:
+  mediaservices:
+    external: true 

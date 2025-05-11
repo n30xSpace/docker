@@ -1,0 +1,60 @@
+services:
+  prowlarr:
+    image: linuxserver/prowlarr:latest
+    container_name: prowlarr
+    hostname: prowlarr
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Santiago
+      - DOCKER_MODS=linuxserver/mods:universal-docker
+      - UMASK=002
+      - Prowlarr__InstanceName=Prowlarr
+      - Prowlarr__LogLevel=info
+      - Prowlarr__Branch=develop
+      - Prowlarr__AnalyticsEnabled=false
+      # Configuración de red
+      - Prowlarr__ProxyEnabled=false
+      - Prowlarr__ProxyType=http
+      - Prowlarr__ProxyHostname=
+      - Prowlarr__ProxyPort=
+      - Prowlarr__ProxyUsername=
+      - Prowlarr__ProxyPassword=
+      # Configuración de caché
+      - Prowlarr__CacheDir=/config/cache
+      - Prowlarr__BackupDir=/config/backups
+      # Configuración de actualizaciones
+      - Prowlarr__UpdateAuto=true
+      - Prowlarr__UpdateMechanism=docker
+    volumes:
+      - ./config:/config
+      - ../media:/media
+    ports:
+      - 9696:9696
+    networks:
+      - mediaservices
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "sonarr:192.168.80.3"
+      - "radarr:192.168.80.5"
+      - "lidarr:192.168.80.6"
+      - "readarr:192.168.80.7"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9696/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1G
+        reservations:
+          cpus: '0.25'
+          memory: 512M
+
+networks:
+  mediaservices:
+    external: true 

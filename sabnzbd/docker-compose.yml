@@ -1,0 +1,26 @@
+services:
+  sabnzbd:
+    image: linuxserver/sabnzbd:latest
+    container_name: sabnzbd
+    restart: unless-stopped
+    volumes:
+      - ./config:/config
+      - ../media:/media
+      - ../media/temp:/downloads/incomplete
+      - ../media/movies:/downloads/complete/movies
+      - ../media/tv:/downloads/complete/tv
+      - ../media/music:/downloads/complete/music
+      - ../media/books:/downloads/complete/books
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Santiago
+      - UMASK=002
+    ports:
+      - 8080:8080
+    networks:
+      - mediaservices
+
+networks:
+  mediaservices:
+    external: true 

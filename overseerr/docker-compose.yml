@@ -1,0 +1,13 @@
+services:
+  overseerr:
+    image: linuxserver/overseerr:latest
+    container_name: overseerr
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=${TZ:-America/Santiago}
+    volumes:
+      - ./config:/config
+    ports:
+      - ${OVERSEERR_PORT:-5055}:5055 

@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<movie>
+  <plot>Creyendo que han dejado atrás las sombras del pasado, los recién casados Christian y Anastasia disfrutan de su relación y de su vida llena de lujos. Pero justo cuando Ana empieza a relajarse, aparecen nuevas amenazas que ponen en riesgo su felicidad. Adaptación de la última novela de la saga "50 sombras de Grey".</plot>
+  <lockdata>false</lockdata>
+  <dateadded>2025-05-09 05:02:08</dateadded>
+  <title>Cincuenta Sombras Liberadas</title>
+  <originaltitle>Fifty Shades Freed</originaltitle>
+  <director>James Foley</director>
+  <writer>E.L. James</writer>
+  <writer>Niall Leonard</writer>
+  <credits>E.L. James</credits>
+  <credits>Niall Leonard</credits>
+  <trailer>plugin://plugin.video.youtube/play/?video_id=imlazhr7Pfk</trailer>
+  <rating>6.695</rating>
+  <year>2018</year>
+  <mpaa>R</mpaa>
+  <collectionnumber>344830</collectionnumber>
+  <imdbid>tt4477536</imdbid>
+  <tmdbid>337167</tmdbid>
+  <premiered>2018-01-17</premiered>
+  <releasedate>2018-01-17</releasedate>
+  <criticrating>11</criticrating>
+  <runtime>110</runtime>
+  <country>United States of America</country>
+  <genre>Drama</genre>
+  <genre>Romance</genre>
+  <studio>Universal Pictures</studio>
+  <studio>Michael De Luca Productions</studio>
+  <studio>Perfect World Pictures</studio>
+  <tag>based on novel or book</tag>
+  <tag>eroticism</tag>
+  <tag>sequel</tag>
+  <tag>bdsm</tag>
+  <art>
+    <poster>/media/peliculas/Fifty Shades Freed (2018)/folder.jpg</poster>
+    <fanart>/media/peliculas/Fifty Shades Freed (2018)/backdrop.jpg</fanart>
+  </art>
+  <actor>
+    <name>Dakota Johnson</name>
+    <role>Anastasia Steele</role>
+    <type>Actor</type>
+    <sortorder>0</sortorder>
+    <thumb>/config/metadata/People/D/Dakota Johnson/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Jamie Dornan</name>
+    <role>Christian Grey</role>
+    <type>Actor</type>
+    <sortorder>1</sortorder>
+    <thumb>/config/metadata/People/J/Jamie Dornan/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Eric Johnson</name>
+    <role>Jack Hyde</role>
+    <type>Actor</type>
+    <sortorder>2</sortorder>
+    <thumb>/config/metadata/People/E/Eric Johnson/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Eloise Mumford</name>
+    <role>Kate Kavanagh</role>
+    <type>Actor</type>
+    <sortorder>3</sortorder>
+    <thumb>/config/metadata/People/E/Eloise Mumford/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Rita Ora</name>
+    <role>Mia Grey</role>
+    <type>Actor</type>
+    <sortorder>4</sortorder>
+    <thumb>/config/metadata/People/R/Rita Ora/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Luke Grimes</name>
+    <role>Elliot Grey</role>
+    <type>Actor</type>
+    <sortorder>5</sortorder>
+    <thumb>/config/metadata/People/L/Luke Grimes/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Victor Rasuk</name>
+    <role>José</role>
+    <type>Actor</type>
+    <sortorder>6</sortorder>
+    <thumb>/config/metadata/People/V/Victor Rasuk/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Max Martini</name>
+    <role>Taylor</role>
+    <type>Actor</type>
+    <sortorder>7</sortorder>
+    <thumb>/config/metadata/People/M/Max Martini/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Jennifer Ehle</name>
+    <role>Carla</role>
+    <type>Actor</type>
+    <sortorder>8</sortorder>
+    <thumb>/config/metadata/People/J/Jennifer Ehle/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Kim Basinger</name>
+    <role>Elena Lincoln</role>
+    <type>Actor</type>
+    <sortorder>9</sortorder>
+    <thumb>/config/metadata/People/K/Kim Basinger/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Marcia Gay Harden</name>
+    <role>Grace Grey</role>
+    <type>Actor</type>
+    <sortorder>10</sortorder>
+    <thumb>/config/metadata/People/M/Marcia Gay Harden/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Bruce Altman</name>
+    <role>Jerry Roach</role>
+    <type>Actor</type>
+    <sortorder>11</sortorder>
+    <thumb>/config/metadata/People/B/Bruce Altman/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Arielle Kebbel</name>
+    <role>Gia Matteo</role>
+    <type>Actor</type>
+    <sortorder>12</sortorder>
+    <thumb>/config/metadata/People/A/Arielle Kebbel/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Callum Keith Rennie</name>
+    <role>Ray</role>
+    <type>Actor</type>
+    <sortorder>13</sortorder>
+    <thumb>/config/metadata/People/C/Callum Keith Rennie/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Robinne Lee</name>
+    <role>Ros Bailey</role>
+    <type>Actor</type>
+    <sortorder>14</sortorder>
+    <thumb>/config/metadata/People/R/Robinne Lee/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Michael De Luca</name>
+    <role>Producer</role>
+    <type>Producer</type>
+    <thumb>/config/metadata/People/M/Michael De Luca/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Marcus Viscidi</name>
+    <role>Producer</role>
+    <type>Producer</type>
+    <thumb>/config/metadata/People/M/Marcus Viscidi/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>E.L. James</name>
+    <role>Producer</role>
+    <type>Producer</type>
+    <thumb>/config/metadata/People/E/E.L. James/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Dana Brunetti</name>
+    <role>Producer</role>
+    <type>Producer</type>
+    <thumb>/config/metadata/People/D/Dana Brunetti/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Stephen F. Newnam</name>
+    <role>Finishing Producer</role>
+    <type>Producer</type>
+  </actor>
+  <id>tt4477536</id>
+  <set>
+    <name>Cincuenta Sombras - Colección</name>
+  </set>
+  <fileinfo>
+    <streamdetails>
+      <video>
+        <codec>hevc</codec>
+        <micodec>hevc</micodec>
+        <bitrate>2233591</bitrate>
+        <width>1920</width>
+        <height>800</height>
+        <aspect>2.40:1</aspect>
+        <aspectratio>2.40:1</aspectratio>
+        <framerate>23.976025</framerate>
+        <scantype>progressive</scantype>
+        <default>True</default>
+        <forced>False</forced>
+        <duration>110</duration>
+        <durationinseconds>6618</durationinseconds>
+      </video>
+      <audio>
+        <codec>eac3</codec>
+        <micodec>eac3</micodec>
+        <bitrate>384000</bitrate>
+        <language>eng</language>
+        <scantype>progressive</scantype>
+        <channels>6</channels>
+        <samplingrate>48000</samplingrate>
+        <default>True</default>
+        <forced>False</forced>
+      </audio>
+      <subtitle>
+        <codec>subrip</codec>
+        <micodec>subrip</micodec>
+        <width>0</width>
+        <height>0</height>
+        <language>eng</language>
+        <scantype>progressive</scantype>
+        <default>True</default>
+        <forced>False</forced>
+      </subtitle>
+    </streamdetails>
+  </fileinfo>
+</movie>

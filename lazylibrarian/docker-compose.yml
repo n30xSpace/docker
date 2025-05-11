@@ -1,0 +1,35 @@
+services:
+  lazylibrarian:
+    image: linuxserver/lazylibrarian:latest
+    container_name: lazylibrarian
+    restart: unless-stopped
+    volumes:
+      - ./config:/config
+      - ../media:/media
+      - ../medias:/medias
+      - ../medias/books:/books
+      - ../medias/descargas/lazylibrarian:/downloads/lazylibrarian
+      - ../qbittorrent/downloads:/downloads
+    environment:
+      - TZ=America/Santiago
+      - PUID=1000
+      - PGID=1000
+      - DOCKER_MODS=linuxserver/mods:universal-package-install
+      - INSTALL_PACKAGES=psutil
+    ports:
+      - 5299:5299
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "qbittorrent:192.168.80.2"
+      - "prowlarr:192.168.80.4"
+      - "readarr:192.168.80.8"
+      - "calibre:192.168.80.9"
+      - "sabnzbd:192.168.80.6"
+    networks:
+      - default
+      - mediaservices
+
+networks:
+  default:
+  mediaservices:
+    external: true 

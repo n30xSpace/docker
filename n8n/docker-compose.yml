@@ -1,0 +1,33 @@
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    restart: always
+    ports:
+      - "${PUERTO_EXTERNO:-5678}:5678"
+    environment:
+      - N8N_HOST=${N8N_HOST:-localhost}
+      - N8N_PORT=${N8N_PORT:-5678}
+      - N8N_PROTOCOL=${N8N_PROTOCOL:-http}
+      - NODE_ENV=${NODE_ENV:-production}
+      - WEBHOOK_URL=${WEBHOOK_URL:-https://localhost:5678/}
+      - GENERIC_TIMEZONE=${GENERIC_TIMEZONE:-America/Santiago}
+      - N8N_DEFAULT_LOCALE=${N8N_DEFAULT_LOCALE:-es}
+      - N8N_SECURE_COOKIE=false
+    volumes:
+      - ./data:/home/node/.n8n
+      - ./local-files:/files
+    networks:
+      - default
+      - tailnet
+      - npm_network
+
+volumes:
+  n8n_data:
+    driver: local
+
+networks:
+  default:
+  tailnet:
+    external: true
+  npm_network:
+    external: true 

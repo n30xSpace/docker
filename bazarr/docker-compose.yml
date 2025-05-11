@@ -1,0 +1,37 @@
+services:
+  bazarr:
+    image: linuxserver/bazarr:latest
+    container_name: bazarr
+    restart: unless-stopped
+    volumes:
+      - ./config:/config
+      - ../media:/media
+      - ../media/movies:/movies
+      - ../media/tv:/tv
+      - ../downloads:/downloads
+      - ../downloads/complete:/downloads/complete
+      - ../downloads/incomplete:/downloads/incomplete
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Santiago
+      - BAZARR_PORT=6767
+      - LANG=es_ES.UTF-8
+      - LANGUAGE=es_ES:es
+      - LC_ALL=es_ES.UTF-8
+    ports:
+      - 6767:6767
+    networks:
+      - default
+      - mediaservices
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "sonarr:192.168.80.3"
+      - "radarr:192.168.80.5"
+      - "prowlarr:192.168.80.4"
+      - "sabnzbd:192.168.80.2"
+
+networks:
+  default:
+  mediaservices:
+    external: true 

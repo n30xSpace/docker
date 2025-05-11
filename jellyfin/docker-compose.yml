@@ -1,0 +1,25 @@
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    user: 1000:1000
+    restart: unless-stopped
+    volumes:
+      - ./config:/config
+      - ./cache:/cache
+      - ../medias/peliculas:/media/peliculas
+      - ../medias/series:/media/series
+      - ../medias/musica:/media/musica
+    environment:
+      - JELLYFIN_PublishedServerUrl=${JELLYFIN_URL:-http://localhost:8096}
+      - TZ=${TZ:-America/Santiago}
+    ports:
+      - "${JELLYFIN_PORT:-8096}:8096"
+    networks:
+      - default
+      - npm_network
+
+networks:
+  default:
+  npm_network:
+    external: true 

@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<movie>
+  <plot>Cuando Christian Grey, que se siente herido, intenta convencer a Anastasia Steele de que vuelva a formar parte de su vida, ella le exige un nuevo acuerdo antes de aceptar. Pero cuando la pareja empieza a ser más confiada y a tener una cierta estabilidad, aparecen mujeres del pasado de Christian decididas a frenar en seco sus esperanzas de un futuro juntos... Secuela de "50 sombras de Grey", en la que Grey sigue explorando sus demonios interiores y la joven Anastasia confronta sus sentimientos y confusión sobre su relación con el atractivo millonario, un tipo misterioso lleno de secretos.</plot>
+  <lockdata>false</lockdata>
+  <dateadded>2025-05-09 01:27:57</dateadded>
+  <title>Cincuenta Sombras Más Oscuras</title>
+  <originaltitle>Fifty Shades Darker</originaltitle>
+  <director>James Foley</director>
+  <writer>E.L. James</writer>
+  <writer>Niall Leonard</writer>
+  <credits>E.L. James</credits>
+  <credits>Niall Leonard</credits>
+  <rating>6.486</rating>
+  <year>2017</year>
+  <mpaa>R</mpaa>
+  <collectionnumber>344830</collectionnumber>
+  <imdbid>tt4465564</imdbid>
+  <tmdbid>341174</tmdbid>
+  <premiered>2017-02-08</premiered>
+  <releasedate>2017-02-08</releasedate>
+  <criticrating>11</criticrating>
+  <runtime>131</runtime>
+  <tagline>Todo cuento de hadas tiene un lado oscuro.</tagline>
+  <country>Japan</country>
+  <country>United States of America</country>
+  <genre>Drama</genre>
+  <genre>Romance</genre>
+  <studio>Universal Pictures</studio>
+  <studio>Michael De Luca Productions</studio>
+  <studio>dentsu</studio>
+  <studio>Fuji Television Network</studio>
+  <studio>Perfect World Pictures</studio>
+  <tag>based on novel or book</tag>
+  <tag>boat</tag>
+  <tag>eroticism</tag>
+  <tag>kiss</tag>
+  <tag>sequel</tag>
+  <tag>bdsm</tag>
+  <tag>dreary</tag>
+  <art>
+    <poster>/media/peliculas/Fifty Shades Darker (2017)/folder.jpg</poster>
+    <fanart>/media/peliculas/Fifty Shades Darker (2017)/backdrop.jpg</fanart>
+  </art>
+  <actor>
+    <name>Dakota Johnson</name>
+    <role>Anastasia Steele</role>
+    <type>Actor</type>
+    <sortorder>0</sortorder>
+    <thumb>/config/metadata/People/D/Dakota Johnson/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Jamie Dornan</name>
+    <role>Christian Grey</role>
+    <type>Actor</type>
+    <sortorder>1</sortorder>
+    <thumb>/config/metadata/People/J/Jamie Dornan/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Eric Johnson</name>
+    <role>Jack Hyde</role>
+    <type>Actor</type>
+    <sortorder>2</sortorder>
+    <thumb>/config/metadata/People/E/Eric Johnson/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Eloise Mumford</name>
+    <role>Kate Kavanagh</role>
+    <type>Actor</type>
+    <sortorder>3</sortorder>
+    <thumb>/config/metadata/People/E/Eloise Mumford/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Bella Heathcote</name>
+    <role>Leila</role>
+    <type>Actor</type>
+    <sortorder>4</sortorder>
+    <thumb>/config/metadata/People/B/Bella Heathcote/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Rita Ora</name>
+    <role>Mia Grey</role>
+    <type>Actor</type>
+    <sortorder>5</sortorder>
+    <thumb>/config/metadata/People/R/Rita Ora/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Jennifer Ehle</name>
+    <role>Carla</role>
+    <type>Actor</type>
+    <sortorder>6</sortorder>
+    <thumb>/config/metadata/People/J/Jennifer Ehle/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Luke Grimes</name>
+    <role>Elliot Grey</role>
+    <type>Actor</type>
+    <sortorder>7</sortorder>
+    <thumb>/config/metadata/People/L/Luke Grimes/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Victor Rasuk</name>
+    <role>José</role>
+    <type>Actor</type>
+    <sortorder>8</sortorder>
+    <thumb>/config/metadata/People/V/Victor Rasuk/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Max Martini</name>
+    <role>Taylor</role>
+    <type>Actor</type>
+    <sortorder>9</sortorder>
+    <thumb>/config/metadata/People/M/Max Martini/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Bruce Altman</name>
+    <role>Jerry Roach</role>
+    <type>Actor</type>
+    <sortorder>10</sortorder>
+    <thumb>/config/metadata/People/B/Bruce Altman/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Kim Basinger</name>
+    <role>Elena Lincoln</role>
+    <type>Actor</type>
+    <sortorder>11</sortorder>
+    <thumb>/config/metadata/People/K/Kim Basinger/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Marcia Gay Harden</name>
+    <role>Grace Trevelyan Grey</role>
+    <type>Actor</type>
+    <sortorder>12</sortorder>
+    <thumb>/config/metadata/People/M/Marcia Gay Harden/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Andrew Airlie</name>
+    <role>Carrick Grey</role>
+    <type>Actor</type>
+    <sortorder>13</sortorder>
+    <thumb>/config/metadata/People/A/Andrew Airlie/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Robinne Lee</name>
+    <role>Ros Bailey</role>
+    <type>Actor</type>
+    <sortorder>14</sortorder>
+    <thumb>/config/metadata/People/R/Robinne Lee/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Dana Brunetti</name>
+    <role>Producer</role>
+    <type>Producer</type>
+    <thumb>/config/metadata/People/D/Dana Brunetti/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Marcus Viscidi</name>
+    <role>Producer</role>
+    <type>Producer</type>
+    <thumb>/config/metadata/People/M/Marcus Viscidi/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>Michael De Luca</name>
+    <role>Producer</role>
+    <type>Producer</type>
+    <thumb>/config/metadata/People/M/Michael De Luca/folder.jpg</thumb>
+  </actor>
+  <actor>
+    <name>E.L. James</name>
+    <role>Producer</role>
+    <type>Producer</type>
+    <thumb>/config/metadata/People/E/E.L. James/folder.jpg</thumb>
+  </actor>
+  <id>tt4465564</id>
+  <set>
+    <name>Cincuenta Sombras - Colección</name>
+  </set>
+  <fileinfo>
+    <streamdetails>
+      <subtitle>
+        <codec>subrip</codec>
+        <micodec>subrip</micodec>
+        <width>0</width>
+        <height>0</height>
+        <scantype>progressive</scantype>
+        <default>False</default>
+        <forced>False</forced>
+      </subtitle>
+      <video>
+        <codec>h264</codec>
+        <micodec>h264</micodec>
+        <bitrate>2049309</bitrate>
+        <width>1920</width>
+        <height>800</height>
+        <aspect>2.40:1</aspect>
+        <aspectratio>2.40:1</aspectratio>
+        <framerate>23.976025</framerate>
+        <language>und</language>
+        <scantype>progressive</scantype>
+        <default>True</default>
+        <forced>False</forced>
+        <duration>131</duration>
+        <durationinseconds>7888</durationinseconds>
+      </video>
+      <audio>
+        <codec>aac</codec>
+        <micodec>aac</micodec>
+        <bitrate>115802</bitrate>
+        <language>und</language>
+        <scantype>progressive</scantype>
+        <channels>2</channels>
+        <samplingrate>48000</samplingrate>
+        <default>True</default>
+        <forced>False</forced>
+      </audio>
+    </streamdetails>
+  </fileinfo>
+</movie>

@@ -1,0 +1,22 @@
+services:
+  calibre-web:
+    image: linuxserver/calibre-web:latest
+    container_name: calibre-web
+    restart: unless-stopped
+    volumes:
+      - ./config:/config
+      - ../medias/books:/books
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Santiago
+      - DOCKER_MODS=linuxserver/mods:universal-package-install
+      - INSTALL_PACKAGES=imagemagick
+    ports:
+      - 8083:8083
+    networks:
+      - mediaservices
+
+networks:
+  mediaservices:
+    external: true 

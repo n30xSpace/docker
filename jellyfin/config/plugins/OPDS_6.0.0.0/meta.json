@@ -1,0 +1,16 @@
+{
+  "category": "General",
+  "changelog": "- 10.10 fixes (#44) @crobibero\n\n### New features and improvements ###\n- Add more descriptive feed name (#25) @crobibero\n\n### Bug Fixes ###\n- fix: Support different query parameter names in search (#41) @rluetzner\n\n### Dependency updates ###\n- chore(deps): update dependency stylecop.analyzers to v1.2.0-beta.556 - autoclosed (#34) @renovate",
+  "description": "Provides an OPDS book feed",
+  "guid": "f30880ae-3365-449e-b9e6-bf133c8401b0",
+  "name": "OPDS Feed",
+  "overview": "Provides an OPDS book feed",
+  "owner": "jellyfin",
+  "targetAbi": "10.10.0.0",
+  "timestamp": "2024-10-26T18:10:14.0000000Z",
+  "version": "6.0.0.0",
+  "status": "Active",
+  "autoUpdate": true,
+  "imagePath": "/config/plugins/OPDS_6.0.0.0/jellyfin-plugin-opds.png",
+  "assemblies": []
+}

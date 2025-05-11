@@ -1,0 +1,35 @@
+services:
+  jellyseerr:
+    image: fallenbagel/jellyseerr:latest
+    container_name: jellyseerr
+    restart: unless-stopped
+    environment:
+      - TZ=${TZ:-America/Santiago}
+      - LOG_LEVEL=debug
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ./config:/app/config
+      - ../medias:/medias:ro
+    ports:
+      - ${JELLYSEERR_PORT:-5055}:5055
+    networks:
+      - default
+      - mediaservices
+      - tailnet
+      - npm_network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "jellyfin:192.168.48.8"
+      - "sonarr:192.168.80.3"
+      - "radarr:192.168.80.5"
+      - "prowlarr:192.168.80.4"
+
+networks:
+  default:
+  mediaservices:
+    external: true
+  tailnet:
+    external: true
+  npm_network:
+    external: true 
