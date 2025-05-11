@@ -29,4 +29,11 @@ La aplicación estará disponible en `http://localhost:8080`
 Para detener los contenedores:
 ```bash
 docker-compose down
+```
+
+## Actualización
+
+Para mantener el repositorio actualizado:
+```bash
+git pull origin master
 ``` 
