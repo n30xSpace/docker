@@ -34,6 +34,27 @@ wait_for_service() {
     return 1
 }
 
+# Función para verificar si PostgreSQL está listo
+wait_for_postgres() {
+    local max_attempts=30
+    local attempt=1
+
+    echo -e "${CYAN}⏳ Esperando a que PostgreSQL esté listo...${NC}"
+    
+    while [ $attempt -le $max_attempts ]; do
+        if docker exec postgres pg_isready -h localhost -p 5432 > /dev/null 2>&1; then
+            echo -e "${GREEN}✅ PostgreSQL está listo${NC}"
+            return 0
+        fi
+        echo -e "${YELLOW}Intento $attempt de $max_attempts...${NC}"
+        sleep 10
+        attempt=$((attempt + 1))
+    done
+    
+    echo -e "${RED}❌ PostgreSQL no está respondiendo después de $max_attempts intentos${NC}"
+    return 1
+}
+
 # Función para iniciar un servicio
 start_service() {
     local service=$1
@@ -85,9 +106,17 @@ if ! docker network ls | grep -q "mediaservices"; then
     docker network create mediaservices
 fi
 
+# Iniciar PostgreSQL primero
+echo -e "\n${CYAN}🐘 Iniciando PostgreSQL...${NC}"
+cd postgresql || exit 1
+docker compose up -d
+cd ..
+
+# Esperar a que PostgreSQL esté listo
+wait_for_postgres
+
 # Definir el orden de inicio de los servicios
 declare -A services=(
-    ["postgresql"]="5432"
     ["nginx-proxy-manager"]="81"
     ["prowlarr"]="9696"
     ["sabnzbd"]="8080"
@@ -107,6 +136,8 @@ declare -A services=(
     ["calibre"]="8083"
     ["lazylibrarian"]="5299"
     ["homarr"]="7575"
+    ["vaultwarden"]="8081"
+    ["n8n"]="5678"
 )
 
 # Iniciar servicios en orden
@@ -134,4 +165,6 @@ echo -e "🛠️ Portainer: http://localhost:9000"
 echo -e "🗂️ Filebrowser: http://localhost:8091"
 echo -e "📖 Calibre: http://localhost:8083"
 echo -e "📚 Lazylibrarian: http://localhost:5299"
-echo -e "🏠 Homarr: http://localhost:7575" 
+echo -e "🏠 Homarr: http://localhost:7575"
+echo -e "🔐 Vaultwarden: http://localhost:8081"
+echo -e "🔄 n8n: http://localhost:5678" 
